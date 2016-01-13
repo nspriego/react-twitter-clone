@@ -1,16 +1,18 @@
+import Greet from './greet';
+
 class Main extends React.Component {
   render() {
     return (
-      <Greet/>
+      <Greet />
     );
   }
 }
 
-// let documentReady = () => {
-//   ReactDOM.render(
-//     <Main />,
-//     document.getElementById('react')
-//   );
-// };
+let documentReady = () => {
+  ReactDOM.render(
+    <Main />,
+    document.getElementById('react')
+  );
+};
 
-// $(documentReady);
+$(documentReady);

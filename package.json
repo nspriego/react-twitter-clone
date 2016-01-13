@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/nspriego/react-twitter-clone/issues"
   },
-  "homepage": "https://github.com/nspriego/react-twitter-clone"
+  "homepage": "https://github.com/nspriego/react-twitter-clone",
+  "dependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.12.11"
+  }
 }
