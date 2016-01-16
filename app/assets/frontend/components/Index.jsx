@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router';
 import TweetBox from './TweetBox';
 import TweetsList from './TweetsList';
 import TweetStore from "../stores/TweetStore";
@@ -23,12 +24,12 @@ export default class Index extends React.Component {
     TweetStore.removeChangeListener(this._onChange);
   }
   _onChange() {
-    console.log(5, "Main._onChange")
     this.setState(getAppState());
   }
   render() {
     return (
       <div className="container">
+        <Link to="/follow">Who to follow</Link>
         <TweetBox />
         <TweetsList tweets={this.state.tweetsList} />
       </div>
